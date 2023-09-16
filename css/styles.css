@@ -1,0 +1,186 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family:"Open Sans", sans-serif;
+}
+.header{
+    height: 98px;
+    border-bottom: solid 1px black;
+    background-color: #F1F1F1;
+}
+.header img{
+    width: auto;
+    height: 19px;
+}
+body{
+    background-color: #FFFFFF;
+}
+a{   
+    display: inline;
+    text-decoration: none;
+}
+#logo{
+    height: 50px;
+    margin-left: 190px;
+    margin-top: 20px;
+}
+#buscador{
+    display: inline;
+    width: 500px;
+    height: 30px;
+    margin-top: 50px;
+    margin-left: 220px;
+    margin-right: 300px;
+}
+.publicidad{
+    display: flex;
+    justify-content: space-between;
+}
+#banner{
+    padding-top: 20px;
+    padding-left: 80px;
+    height: 365px;
+    width: 848px;
+}
+.cabezera-ofertas{
+    width: 400.95px;
+    height: 87.98px;
+    padding: 16px,20px;
+    margin:20px;
+    margin-right: 100px;
+    margin-bottom: 0px;
+    background-color: #004797;
+
+}
+.cabezera-ofertas h2{
+    color: #FFFFFF;
+    size: 18px;
+    font-family: arial,sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+.cuerpo-ofertas{
+    width: 400.95px;
+    height: 284px;
+    padding: 24px,20px,12px;
+    margin:20px;
+    margin-top: 0px;
+    background-color: #f4f9ff;
+}
+.cuerpo-ofertas img{
+    width: 330px;
+    height: auto;
+    padding: 30px;
+}
+.cabezera-bestseller{
+    width: 400.95px;
+    height: 87.98px;
+    padding: 16px,20px;
+    margin:20px;
+    margin-bottom: 0px;
+    background-color: #004797;
+
+}
+.cabezera-bestseller h2{
+    color: #FFFFFF;
+    size: 18px;
+    font-family: arial,sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+.cuerpo-bestseller{
+    width: 400.95px;
+    height: 284px;
+    padding: 24px,20px;
+    margin:20px;
+    margin-top: 0px;
+    background-color: #f4f9ff;
+}
+.cuerpo-bestseller img{
+    width: auto;
+    height: 250px;
+    padding: 20px;
+    margin-left: 50px;
+}
+.orden-cards{
+    display: flex;
+    justify-content: space-between;
+}
+.card {
+    display: block;
+    background-color:#f2f2f2;
+    width: 270px;
+    height: 300px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    border: solid 2px black;
+}
+.card img{
+    height: 200px;
+    width: auto;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    height: 270px;
+    background-color:#004797;
+}
+.email {
+    display: inline;   
+    border-left: solid 1.5px black;
+    border-right: solid 1.5px black;
+    padding-right: 190px;
+    padding-left: 190px;
+}
+.nosotros{
+    padding-left: 200px;
+}
+.telefono{
+    padding-right: 200px;
+}
+.footer img{
+    display: inline;
+    height: 50px;
+    width: 50px;
+
+}
+
+
+/*
+
+------pagina de sesion.html--------
+
+*/
+
+
+.iniciar-sesion img{
+    display: block;
+    height: auto;
+    width: 350px;
+    margin: 0 auto;
+}
+.division{
+    display: flex;
+    justify-content: space-between;
+}
+.parte-derecha img{
+    display: block;
+    height: 100px;
+    padding: 120px;
+    margin-left: 150px;
+}
+.parte-izquierda form{
+    border-left: solid 1px black;
+    margin-right: 150px;
+    padding: 200px;
+}
+.parte-izquierda form input{
+    display: block;
+    margin-top: 20px;
+}
+.parte-izquierda form ,h {
+    display: block;
+    margin: 20px;
+}
