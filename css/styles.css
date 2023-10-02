@@ -3,184 +3,506 @@
     padding: 0%;
     font-family:"Open Sans", sans-serif;
 }
-.header{
-    height: 98px;
-    border-bottom: solid 1px black;
-    background-color: #F1F1F1;
-}
-.header img{
-    width: auto;
-    height: 19px;
-}
 body{
     background-color: #FFFFFF;
 }
-a{   
-    display: inline;
+a{
     text-decoration: none;
 }
-#logo{
-    height: 50px;
-    margin-left: 190px;
-    margin-top: 20px;
-}
-#buscador{
-    display: inline;
-    width: 500px;
-    height: 30px;
-    margin-top: 50px;
-    margin-left: 220px;
-    margin-right: 300px;
-}
-.publicidad{
-    display: flex;
-    justify-content: space-between;
-}
-#banner{
-    padding-top: 20px;
-    padding-left: 80px;
-    height: 365px;
-    width: 848px;
-}
-.cabezera-ofertas{
-    width: 400.95px;
-    height: 87.98px;
-    padding: 16px,20px;
-    margin:20px;
-    margin-right: 100px;
-    margin-bottom: 0px;
-    background-color: #004797;
 
-}
-.cabezera-ofertas h2{
-    color: #FFFFFF;
-    size: 18px;
-    font-family: arial,sans-serif;
-    text-align: center;
-    padding: 20px;
-}
-.cuerpo-ofertas{
-    width: 400.95px;
-    height: 284px;
-    padding: 24px,20px,12px;
-    margin:20px;
-    margin-top: 0px;
-    background-color: #f4f9ff;
-}
-.cuerpo-ofertas img{
-    width: 330px;
-    height: auto;
-    padding: 30px;
-}
-.cabezera-bestseller{
-    width: 400.95px;
-    height: 87.98px;
-    padding: 16px,20px;
-    margin:20px;
-    margin-bottom: 0px;
-    background-color: #004797;
 
+/*Navbar*/
+.navbar {
+    background-color: #172564;
+    height: 70px;
+    justify-content: center;
 }
-.cabezera-bestseller h2{
-    color: #FFFFFF;
-    size: 18px;
-    font-family: arial,sans-serif;
-    text-align: center;
-    padding: 20px;
-}
-.cuerpo-bestseller{
-    width: 400.95px;
-    height: 284px;
-    padding: 24px,20px;
-    margin:20px;
-    margin-top: 0px;
-    background-color: #f4f9ff;
-}
-.cuerpo-bestseller img{
-    width: auto;
-    height: 250px;
-    padding: 20px;
-    margin-left: 50px;
-}
-.orden-cards{
+
+.lista-nav {
     display: flex;
-    justify-content: space-between;
+    list-style: none; 
+    align-items: center;
+    gap: 30px; 
 }
-.card {
-    display: block;
-    background-color:#f2f2f2;
-    width: 270px;
+
+.lista-nav a{
+    color: #EBEBEB;
+}
+.lista-nav li {
+    margin-right: 20px; /* Espacio entre los elementos de la lista */
+}
+
+input[name="search"] {/* Estilos para el campo de búsqueda */
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+
+
+/* Estilos para la sección de los tipos de prodcutos */
+.padre-tipos-productos {
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  
+  .padre-tipos-productos div {/* Estilos para los elementos individuales */
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Efecto de transición en el color de fondo */
+  }
+  
+  .padre-tipos-productos div:hover {/* Estilos para los elementos cuando se pasa el cursor por encima */
+    background-color: #007bff; /* Cambia el color de fondo al pasar el cursor */
+    color: #fff; /* Cambia el color del texto al pasar el cursor */
+    cursor: pointer; /* Cambia el cursor al pasar el cursor */
+  }
+  .padre-tipos-productos img{
     height: 300px;
-    margin: 20px;
-    padding: 20px;
-    text-align: center;
-    border: solid 2px black;
-}
-.card img{
-    height: 200px;
-    width: auto;
-}
+    width: 300px;
+  }
 
-.footer{
+  .padre-tipos-productos div a {  /* Estilos para los enlaces */
+    text-decoration: none; /* Quita la subrayado predeterminado de los enlaces */
+    color: inherit; /* Hereda el color del texto de su contenedor */
+  }
+
+
+
+/*Objetos de confianza*/
+.padre-separador-confianza{
+    background-color: #EBEBEB;
+}
+.separador-confianza {
     display: flex;
-    justify-content: space-around;
-    height: 270px;
-    background-color:#004797;
+    margin-top: 30px;
+    justify-content: space-evenly;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
 }
-.email {
-    display: inline;   
-    border-left: solid 1.5px black;
-    border-right: solid 1.5px black;
-    padding-right: 190px;
-    padding-left: 190px;
+.separador-confianza img{
+    height: 40px;
+    width: 100%;
 }
-.nosotros{
-    padding-left: 200px;
-}
-.telefono{
-    padding-right: 200px;
-}
-.footer img{
-    display: inline;
-    height: 50px;
-    width: 50px;
-
+.separador-confianza a{
+    text-decoration: none;
+    color: black;
 }
 
 
-/*
+/*Estilos para contendeor de cartas de promocion y cartas de productos*/
 
-------pagina de sesion.html--------
+.contenedor-productos{
+  display: flex;
+  width: 100%;
+}
 
-*/
-
-
-.iniciar-sesion img{
+/* Estilos para cartas de promocion */
+.contenedor {
     display: block;
-    height: auto;
+    align-items: center;
+  }
+
+  .carta {/* Estilos para la carta */
     width: 350px;
-    margin: 0 auto;
-}
-.division{
-    display: flex;
-    justify-content: space-between;
-}
-.parte-derecha img{
-    display: block;
-    height: 100px;
-    padding: 120px;
-    margin-left: 150px;
-}
-.parte-izquierda form{
-    border-left: solid 1px black;
-    margin-right: 150px;
-    padding: 200px;
-}
-.parte-izquierda form input{
-    display: block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 30px;
     margin-top: 20px;
+  }
+
+  .carta-top {  /* Estilos para la parte superior (título) */
+    background-color: #1f369b;
+    color: #fff;
+    padding: 10px;
+  }
+
+  .carta-imagen {  /* Estilos para la imagen */
+    text-align: center;
+  }
+
+  .carta-imagen img {
+    max-width: 100%;
+    height: auto;
+  }
+
+
+/* Cards de productos */
+.padre-cards {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: stretch; /* Todas las cartas tendrán la misma altura */
 }
-.parte-izquierda form ,h {
-    display: block;
-    margin: 20px;
+
+div.product-card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 15px;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 250px; /* Ancho de la carta */
+  height: 619px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.product-card p.product-name {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.product-card p.product-price {
+  color: #e91e63;
+  font-size: 1.2em;
+  margin-top: 5px;
+}
+
+.product-card p.product-feature {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.product-card button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  align-self: flex-end;
+}
+
+.product-card button:hover {
+  background-color: #0056b3;
+}
+
+ 
+
+
+/* Estilos para el footer */
+footer {
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Texto blanco */
+    padding: 20px; /* Espacio interno */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    height: 250px;
+  }
+  
+  
+  footer div {/* Estilos para los divs dentro del footer */
+    border-right: 1px solid #fff; /* Línea blanca a la derecha de los divs */
+    padding-right: 20px; /* Espacio interno a la derecha de los divs */
+    margin-right: 20px; /* Margen derecho entre los divs */
+  }
+
+  footer a{
+    color: #fff;
+  }
+  
+  
+  footer div:last-child {/* Estilo para el último div para eliminar la línea blanca */
+    border-right: none; /* Elimina la línea blanca en el último div */
+    margin-right: 0; /* Elimina el margen derecho en el último div */
+  }
+
+
+  /*-----------------ESTILOS-------- SESION.HTML------------------*/
+
+  /* Estilos para el contenedor principal */
+/* Estilos para el contenedor principal */
+.divisor {
+  display: flex; /* Usamos flexbox para distribuir los elementos en filas (por defecto) */
+  justify-content: center; /* Centra los elementos horizontalmente en el centro de la página */
+  align-items: center; /* Centra los elementos verticalmente en el centro de la página */
+  height: 100vh; /* Establece la altura al 100% de la ventana gráfica (viewport height) */
+}
+
+/* Estilos para la mitad izquierda */
+.parte-izquierda-sesion {
+  flex: 4; /* La mitad izquierda tomará el 40% del espacio disponible */
+  text-align: center; /* Centra el contenido dentro de la parte izquierda */
+  padding: 20px; /* Añade espacio alrededor del contenido */
+  background-color: #ffffff; /* Color de fondo opcional */
+  border-right: 1px solid black; /* Agrega una línea negra a la derecha de la parte izquierda */
+  margin-right: 20px; /* Espacio a la derecha de la línea */
+}
+
+/* Estilos para la imagen */
+.parte-izquierda-sesion img {
+  max-width: 100px; /* Establece el ancho máximo de la imagen */
+  height: auto; /* Ajusta automáticamente la altura para mantener la proporción */
+  margin: 10px; /* Agrega un margen alrededor de la imagen */
+}
+
+/* Estilos para el enlace */
+.parte-izquierda-sesion a {
+  text-decoration: none;
+  color: rgb(49, 12, 8);
+  font-size: 16px; /* Tamaño de fuente inicial */
+  margin: 10px 0; /* Espacio vertical entre los enlaces */
+  display: block; /* Convierte el enlace en un elemento de bloque */
+}
+
+/* Estilos para la parte derecha */
+.parte-derecha-sesion {
+  flex: 6; /* La mitad derecha tomará el 70% del espacio disponible */
+  display: flex; /* Usamos flexbox para colocar los elementos uno debajo del otro */
+  flex-direction: column; /* Los elementos se apilan en una columna */
+  justify-content: center; /* Centra los elementos verticalmente en el centro de la página */
+  align-items: center; /* Centra los elementos horizontalmente en el centro de la página */
+  height: 100vh; /* Establece la altura al 100% de la ventana gráfica (viewport height) */
+}
+
+/* Estilos para el formulario */
+.parte-derecha-sesion form {
+  text-align: center; /* Centra el contenido dentro del formulario */
+  padding: 20px; /* Espacio alrededor del formulario */
+}
+
+/* Estilos para los elementos del formulario */
+.parte-derecha-sesion form h1 {
+  font-size: 30px; /* Tamaño de fuente para el encabezado */
+  margin-bottom: 10px; /* Espacio inferior para separarlo del siguiente elemento */
+}
+
+.parte-derecha-sesion form input[type="text"],
+.parte-derecha-sesion form input[type="password"] {
+  width: 100%; /* Ancho del 100% para que ocupen todo el ancho del formulario */
+  padding: 10px; /* Espacio interno alrededor de los campos de entrada */
+  margin-bottom: 10px; /* Espacio inferior entre los campos de entrada */
+}
+
+.parte-derecha-sesion form a {
+  text-decoration: none; /* Quita el subrayado de los enlaces */
+  display: block; /* Hace que el enlace ocupe todo el ancho disponible */
+  margin-bottom: 10px; /* Espacio inferior entre los enlaces */
+}
+
+.parte-derecha-sesion form button {
+  background-color: #007bff; /* Color de fondo del botón */
+  color: #fff; /* Color del texto del botón */
+  border-radius: 5px;
+  padding: 10px 20px; /* Espacio interno alrededor del botón */
+  border: none; /* Quita el borde del botón */
+  margin: 10px auto; /* Centra horizontalmente y agrega espacio vertical entre los botones */
+  display: block; /* Hace que los botones ocupen todo el ancho disponible */
+}
+
+
+
+
+/*-----------------ESTILOS-------- CARRITO.HTML------------------*/
+
+/* Estilos para el contenedor principal */
+.container {
+  display: flex;
+  justify-content: space-between; /* Distribuir los elementos horizontalmente */
+  align-items: center; /* Alinear elementos en la parte superior */
+}
+
+/* Estilos para el contenedor principal del carrito */
+.container-carrito {
+  flex-basis: 70%;
+  max-width: 800px; /* Ancho máximo del contenedor */
+  margin: 0; /* Eliminamos el margen para que esté completamente a la izquierda */
+  padding: 20px;
+  padding-top: 2.8rem;
+  float: left; /* Alineamos el contenedor a la izquierda */
+}
+
+
+
+/* Estilos para el contenedor de la factura a la derecha */
+.container-factura {
+  flex-basis: 30%;
+  max-width: 40%; /* Ancho máximo del contenedor de la factura */
+  float: right; /* Alineamos el contenedor de la factura a la derecha */
+  padding-top: 2.8rem;
+}
+
+
+
+/* Estilos para los productos en el carrito */
+.producto {
+  display: flex;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+#forma-envio {
+  max-width: 40px;
+  height: auto;/* Estilos para la sección de compras */
+}
+  .container-compras {
+    flex-basis: 70%;
+    max-width: 800px; /* Ancho máximo del contenedor */
+    margin: 0; /* Eliminamos el margen para que esté completamente a la izquierda */
+    padding: 20px;
+    padding-top: 2.8rem;
+    float: left; /* Alineamos el contenedor a la izquierda */
+  }
+  
+  /* Estilos para los productos en la sección de compras */
+  .producto {
+    display: flex;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  .producto img {
+    max-width: 40px;
+    height: auto;
+    margin-right: 20px;
+  }
+  
+  .producto-info {
+    flex-grow: 1;
+  }
+  
+  .producto a img {
+    max-width: 200px; /* Cambia el tamaño máximo de las imágenes dentro de las etiquetas <a> */
+    height: auto;
+  }
+  
+  h1 {
+    padding-left: 30px;
+    font-size: 2.5rem;
+  }
+  
+  h4 {
+    padding-left: 30px;
+    font-size: 1.5rem;
+  }
+ 
+.producto-info {
+  flex-grow: 1;
+}
+.producto a img {
+  max-width: 200px; /* Cambia el tamaño máximo de las imágenes dentro de las etiquetas <a> */
+  height: auto;
+}
+h1 {
+  padding-left: 30px;
+  font-size: 2.5rem;
+}
+h4 {
+  padding-left: 30px;
+  font-size: 1.5rem;
+}
+
+/* Estilos para las opciones de envío */
+.opciones-envio {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.opciones-envio div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.opciones-envio input[type="radio"] {
+  margin-right: 5px;
+}
+
+/* Estilos para la factura */
+.factura {
+  background-color: #f2f2f2; /* Color de fondo de la factura */
+  padding: 20px; /* Espacio alrededor de la factura */
+  border: 1px solid #ccc; /* Borde alrededor de la factura */
+}
+
+.factura h2 {
+  font-size: 24px; /* Tamaño de fuente para el título de la factura */
+  margin-bottom: 10px; /* Espacio inferior para separarlo del subtotal */
+}
+
+.factura p {
+  font-size: 16px; /* Tamaño de fuente para el texto de la factura */
+  margin: 5px 0; /* Espacio vertical entre los elementos de la factura */
+}
+
+.total h4 {
+  font-size: 20px; /* Tamaño de fuente para el total */
+  margin-top: 10px; /* Espacio superior para separarlo del texto anterior */
+  text-align: right; /* Alineación a la derecha para el total */
+}
+
+
+
+/*-----------------ESTILOS-------- COMPRAS.HTML------------------*/
+.contenedor-compras {
+  display: flex;
+  justify-content: flex-start; /* Alinea los elementos al principio (izquierda) del contenedor */
+}
+
+.publicidad-compras {
+  flex: 0 0 20%; /* Ocupa el 30% del ancho de la pantalla */
+}
+
+.container-compras {
+  flex: 0 0 80%; /* Ocupa el 70% del ancho de la pantalla */
+}
+.compras {
+  display: flex;
+  flex-direction: column; /* Alinea los elementos verticalmente */
+  align-items: flex-start; /* Alinea los elementos a la izquierda */
+}
+/* Estilos para los productos en la sección de compras */
+.producto {
+  margin: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.producto img {
+  max-width: 200px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.producto a img {
+  max-width: 200px; /* Cambia el tamaño máximo de las imágenes dentro de las etiquetas <a> */
+  height: auto;
+}
+.p-productos{
+  display: flex;
+  align-items: center;
+}
+h1 {
+  padding-left: 30px;
+  font-size: 2.5rem;
+}
+h3 {
+    display: flex;
+    align-items: center;
+    font-size: 1.75rem;
+    margin-right: 10px;
+}
+h4{
+  padding-left: 30px;
+  font-size: 1.5rem;
+}
+.button-comprar-btn{
+  display: flex;
+  align-items: end;
 }

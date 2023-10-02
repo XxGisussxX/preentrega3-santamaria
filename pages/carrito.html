@@ -3,35 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!--link a css-->
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="icon" href="../img/favicon.png">
     <title>pComponentes</title>
 </head>
 <body>
+    <!--navbar-->
     <header>
-        <div class="header">
-
-             <!--logo-->
-            <a href="../index.html" >
-                <img  id="logo" src="../img/logopc.jpg" alt="Logo pComponentes">
-            </a>
-
-            <!--buscador-->
-            <input  id="buscador" type="text" placeholder="Que desear buscar">  
-
-            <!--acceso a cuenta y a carrito-->   
-            <a href="../pages/sesion.html" > 
-                <img src="../img/usuario.png" alt="usuario">
-                cuenta
-            </a>        
-            <a href="../pages/carrito.html" >
-                <img src="../img/carrito-de-compras.png" alt="carrito">
-                carrito
-            </a> 
-
-        </div>
+        <nav class="navbar">
+          <ul class="lista-nav">
+            <li>
+              <img src="../img/logopc.jpg" alt="logopc" height="50" width="auto">
+              <a href="../index.html">pComponentes</a>
+            </li>
+            <input name="search" placeholder="Search">
+            <li>
+              <img src="../img/carrito-de-compras.png" alt="carrito-de-compras" height="25" width="auto">
+              <a href="../pages/carrito.html">Carrito</a>
+            </li>
+            <li>
+              <img src="../img/usuario.png" alt="usuario" height="25" width="auto">
+              <a href="../pages/sesion.html">Sesion</a>
+            </li>
+          </ul>
+        </nav>
     </header>
-    
+    <div class="container">
+        <div class="container-carrito">
+            <h1>Carrito de compras</h1>
+            <h4>Productos en el carrito</h4>
+             <div><!--aquí empiezan los productos-->
+                    <ul>
+                        <li class="producto"><!--1er producto-->
+                            <div>
+                                <a href=""><img src="../img/phone-13-128gb-azul-medianoche.jpg" alt=""></a>
+                            </div>
+                            <div class="producto-info"><a href="">Nombre del producto</a></div><!--información del producto-->
+                            <div class="opciones-envio">
+                                <div>
+                                    <input type="radio" name="envio-producto-1"> <!-- Asigna un nombre único para este producto -->
+                                    <img src="../img/camion-de-reparto.png" alt="carrito-de-reparto" id="forma-envio">Envío GRATIS
+                                </div>
+                                <div>
+                                    <input type="radio" name="envio-producto-1"> <!-- Mismo nombre para el mismo producto -->
+                                    <img src="../img/casa.png" alt="recoger-casa" id="forma-envio">Recoge en tienda GRATIS
+                                </div>
+                            </div>
+                        </li>
+                        <li class="producto"><!--2do producto-->
+                            <div>
+                                <a href=""><img src="../img/phone-14-pro-max-128gb-oro.jpg" alt=""></a>
+                            </div>
+                            <div class="producto-info"><a href="">Nombre del producto</a></div>
+                            <div class="opciones-envio">
+                                <div>
+                                    <input type="radio" name="envio-producto-2"> <!-- Nombre único para este producto -->
+                                    <img src="../img/camion-de-reparto.png" alt="carrito-de-reparto" id="forma-envio">Envío GRATIS
+                                </div>
+                                <div>
+                                    <input type="radio" name="envio-producto-2"> <!-- Mismo nombre para el mismo producto -->
+                                    <img src="../img/casa.png" alt="recoger-casa" id="forma-envio">Recoge en tienda GRATIS
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+             </div>
+        </div>
+        <div class="container-factura"><!--aquí empieza la factura-->
+            <div class="factura"><!--factura-->
+                <div>
+                    <h2>Mi carrito</h2>
+                    <p>Subtotal &nbsp;&nbsp;&nbsp;&nbsp; $12.900.000</p>
+                    <p>Envío Gratis &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $0 </p>
+                    <p>Descuentos Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi at perspiciatis autem ad hic. Laudantium est accusantium saepe quisquam tenetur. Culpa laboriosam nemo magni blanditiis. Rem, aperiam. Iusto, et rerum.</p>
+                </div>
+                <div class="total">
+                    <h4>Total &nbsp; $12.000.000 </h4>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
-</html>
+</html>    
