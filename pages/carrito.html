@@ -13,27 +13,29 @@
     <!--navbar-->
     <header>
         <nav class="navbar">
-          <ul class="lista-nav">
-            <li>
-              <img src="../img/logopc.jpg" alt="logopc" height="50" width="auto">
-              <a href="../index.html">pComponentes</a>
-            </li>
-            <input name="search" placeholder="Search">
-            <li>
-              <img src="../img/carrito-de-compras.png" alt="carrito-de-compras" height="25" width="auto">
-              <a href="../pages/carrito.html">Carrito</a>
-            </li>
-            <li>
-              <img src="../img/usuario.png" alt="usuario" height="25" width="auto">
-              <a href="../pages/sesion.html">Sesion</a>
-            </li>
-          </ul>
+            <div class="container navbar-container">
+                <a class="navbar-brand" href="../index.html">
+                    <img class="navbar-logo" src="../img/logopc.jpg" alt="logopc">
+                    pComponentes
+                </a>
+                <div class="navbar-menu">
+                    <input name="search" placeholder="Search">
+                    <a href="../pages/carrito.html">
+                        <img src="../img/carrito-de-compras.png" alt="carrito-de-compras" height="25" width="auto">
+                        Carrito
+                    </a>
+                    <a href="../pages/sesion.html">
+                        <img src="../img/usuario.png" alt="usuario" height="25" width="auto">
+                        Sesion
+                    </a>
+                </div>
+            </div>
         </nav>
-    </header>
+      </header>
     <div class="container">
         <div class="container-carrito">
-            <h1>Carrito de compras</h1>
-            <h4>Productos en el carrito</h4>
+            <h1>&nbsp;Carrito de compras</h1>
+            <h4>&nbsp;&nbsp;Productos en el carrito</h4>
              <div><!--aquí empiezan los productos-->
                     <ul>
                         <li class="producto"><!--1er producto-->

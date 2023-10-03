@@ -11,34 +11,64 @@ a{
 }
 
 
-/*Navbar*/
+/* Navbar styles */
 .navbar {
-    background-color: #172564;
-    height: 70px;
-    justify-content: center;
+  background-color: #172564;
+  padding: 10px 0;
 }
 
-.lista-nav {
-    display: flex;
-    list-style: none; 
-    align-items: center;
-    gap: 30px; 
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.lista-nav a{
-    color: #EBEBEB;
-}
-.lista-nav li {
-    margin-right: 20px; /* Espacio entre los elementos de la lista */
-}
-
-input[name="search"] {/* Estilos para el campo de búsqueda */
-    padding: 5px;
-    border: none;
-    border-radius: 5px;
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  color: #EBEBEB;
+  text-decoration: none;
 }
 
+.navbar-logo {
+  height: 50px;
+  width: auto;
+  margin-right: 10px;
+}
 
+.navbar-menu {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-menu input[name="search"] {
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.navbar-menu a {
+  color: #EBEBEB;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .navbar-menu {
+      flex-direction: row;
+      align-items: flex-start;
+  }
+
+  .navbar-menu a {
+      margin-bottom: 10px;
+      margin-right: 0;
+  }
+  .navbar-menu input{
+    display: none;
+  }
+}
 
 /* Estilos para la sección de los tipos de prodcutos */
 .padre-tipos-productos {
@@ -261,7 +291,7 @@ footer {
 
 /* Estilos para la parte derecha */
 .parte-derecha-sesion {
-  flex: 6; /* La mitad derecha tomará el 70% del espacio disponible */
+  flex: 6; /* La mitad derecha tomará el 60% del espacio disponible */
   display: flex; /* Usamos flexbox para colocar los elementos uno debajo del otro */
   flex-direction: column; /* Los elementos se apilan en una columna */
   justify-content: center; /* Centra los elementos verticalmente en el centro de la página */
@@ -304,6 +334,29 @@ footer {
   display: block; /* Hace que los botones ocupen todo el ancho disponible */
 }
 
+/* Estilos para pantallas más pequeñas, por ejemplo, dispositivos móviles */
+@media (max-width: 768px) {
+  .divisor {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .parte-izquierda-sesion {
+    flex: none;
+    border-right: none; /* Elimina el borde derecho */
+    border-bottom: 1px solid black; /* Agrega un borde inferior */
+    order: 1; /* Cambia el orden para ponerlo en la parte superior */
+  }
+
+  .parte-izquierda-sesion img {
+    width: 50px;
+  }
+
+  .parte-derecha-sesion {
+    order: 2; /* Cambia el orden para ponerlo debajo de la izquierda */
+  }
+}  
+
 
 
 
@@ -334,6 +387,7 @@ footer {
   max-width: 40%; /* Ancho máximo del contenedor de la factura */
   float: right; /* Alineamos el contenedor de la factura a la derecha */
   padding-top: 2.8rem;
+  padding-right: 2rem;
 }
 
 
@@ -361,7 +415,7 @@ footer {
   /* Estilos para los productos en la sección de compras */
   .producto {
     display: flex;
-    margin-bottom: 20px;
+    margin: 20px;
     border: 1px solid #ccc;
     padding: 10px;
   }
@@ -390,7 +444,7 @@ footer {
     padding-left: 30px;
     font-size: 1.5rem;
   }
- 
+
 .producto-info {
   flex-grow: 1;
 }
@@ -399,11 +453,11 @@ footer {
   height: auto;
 }
 h1 {
-  padding-left: 30px;
-  font-size: 2.5rem;
+  padding-left: 3rem;
+  font-size: 2.2rem;
 }
 h4 {
-  padding-left: 30px;
+  padding-left: 3rem;
   font-size: 1.5rem;
 }
 
@@ -446,6 +500,37 @@ h4 {
   margin-top: 10px; /* Espacio superior para separarlo del texto anterior */
   text-align: right; /* Alineación a la derecha para el total */
 }
+
+/* Estilos para pantallas más pequeñas, por ejemplo, dispositivos móviles */
+@media (max-width: 768px) {
+  .container {
+    display: block;
+  }
+
+  .container-compras {
+    flex-basis: 100%; /* Cambia el ancho a 100% para que ocupe todo el ancho disponible */
+    max-width: none; /* Elimina el ancho máximo */
+    margin: 0; /* Elimina el margen */
+    float: none; /* Elimina el float */
+    margin-top: 20px; /* Agrega espacio superior para separarlo de otros elementos */
+  }
+
+  .factura {
+    margin-top: 20px; /* Agrega espacio superior para separar la factura de .container-compras */
+  }
+
+  .container-factura{
+   max-width: none;
+   padding-left: 5rem;
+  }
+  .producto-info {
+    display: flex;
+    align-items: center;
+  }
+  .total h4{
+    text-align: end;
+  }
+} 
 
 
 
@@ -505,4 +590,10 @@ h4{
 .button-comprar-btn{
   display: flex;
   align-items: end;
+}
+
+@media (max-width: 1210px){
+  .publicidad-compras{
+    display: none;
+  }
 }

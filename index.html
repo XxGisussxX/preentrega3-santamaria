@@ -13,21 +13,23 @@
     <!--navbar-->
     <header>
       <nav class="navbar">
-        <ul class="lista-nav">
-          <li>
-            <img src="img/logopc.jpg" alt="logopc" height="50" width="auto">
-            <a href="index.html">pComponentes</a>
-          </li>
-          <input name="search" placeholder="Search">
-          <li>
-            <img src="img/carrito-de-compras.png" alt="carrito-de-compras" height="25" width="auto">
-            <a href="pages/carrito.html">Carrito</a>
-          </li>
-          <li>
-            <img src="img/usuario.png" alt="usuario" height="25" width="auto">
-            <a href="pages/sesion.html">Sesion</a>
-          </li>
-        </ul>
+          <div class="container navbar-container">
+              <a class="navbar-brand" href="index.html">
+                  <img class="navbar-logo" src="img/logopc.jpg" alt="logopc">
+                  pComponentes
+              </a>
+              <div class="navbar-menu">
+                  <input name="search" placeholder="Search">
+                  <a href="pages/carrito.html">
+                      <img src="img/carrito-de-compras.png" alt="carrito-de-compras" height="25" width="auto">
+                      Carrito
+                  </a>
+                  <a href="pages/sesion.html">
+                      <img src="img/usuario.png" alt="usuario" height="25" width="auto">
+                      Sesion
+                  </a>
+              </div>
+          </div>
       </nav>
     </header>
     <!--carrucel-->
@@ -106,6 +108,28 @@
     <!-- Contenedor principal (flex) -->
     <div class="contenedor">
       <!-- Carta a la izquierda -->
+      <div class="carta">
+        <!-- Parte superior (título) -->
+        <div class="carta-top">
+          <h2>Título de la Carta</h2>
+        </div>
+      <!-- Imagen -->
+      <div class="carta-imagen">
+        <img src="img/promociones1.jpg" alt="Imagen de la carta">
+      </div>
+      </div>
+
+      <!-- Otras "cards" a la derecha -->
+      <div class="carta">
+        <!-- Parte superior (título) -->
+        <div class="carta-top">
+          <h2>Otra Carta</h2>
+        </div>
+      <!-- Imagen -->
+      <div class="carta-imagen">
+        <img src="img/promociones5.jpg" alt="Otra imagen">
+      </div>
+      </div>
       <div class="carta">
         <!-- Parte superior (título) -->
         <div class="carta-top">
