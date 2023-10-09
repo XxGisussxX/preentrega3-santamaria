@@ -54,7 +54,6 @@ a {
   text-decoration: none;
   margin-right: 20px;
 }
-
 /* Estilos para la sección de los tipos de prodcutos */
 .padre-tipos-productos {
   display: flex;
@@ -229,7 +228,6 @@ footer div:last-child { /* Estilo para el último div para eliminar la línea bl
   border-right: none; /* Elimina la línea blanca en el último div */
   margin-right: 0; /* Elimina el margen derecho en el último div */
 }
-
 /* Responsive styles */
 @media (max-width: 768px) {
   .navbar-menu {
@@ -254,84 +252,94 @@ footer div:last-child { /* Estilo para el último div para eliminar la línea bl
 }
 
 /*-----------------ESTILOS-------- SESION.HTML------------------*/
-/* Estilos para el contenedor principal */
-/* Estilos para el contenedor principal */
 .divisor {
-  display: flex; /* Usamos flexbox para distribuir los elementos en filas (por defecto) */
-  justify-content: center; /* Centra los elementos horizontalmente en el centro de la página */
-  align-items: center; /* Centra los elementos verticalmente en el centro de la página */
-  height: 100vh; /* Establece la altura al 100% de la ventana gráfica (viewport height) */
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh; 
 }
 
 /* Estilos para la mitad izquierda */
 .parte-izquierda-sesion {
-  flex: 4; /* La mitad izquierda tomará el 40% del espacio disponible */
-  text-align: center; /* Centra el contenido dentro de la parte izquierda */
-  padding: 20px; /* Añade espacio alrededor del contenido */
-  background-color: #ffffff; /* Color de fondo opcional */
-  border-right: 1px solid black; /* Agrega una línea negra a la derecha de la parte izquierda */
-  margin-right: 20px; /* Espacio a la derecha de la línea */
+  flex: 4; 
+  text-align: center;
+  padding: 20px;
+  background-color: #ffffff; 
+  border-right: 1px solid black; 
+  margin-right: 20px; 
 }
 
 /* Estilos para la imagen */
 .parte-izquierda-sesion img {
-  max-width: 100px; /* Establece el ancho máximo de la imagen */
-  height: auto; /* Ajusta automáticamente la altura para mantener la proporción */
-  margin: 10px; /* Agrega un margen alrededor de la imagen */
+  max-width: 100px;
+  height: auto; 
+  margin: 10px; 
 }
 
 /* Estilos para el enlace */
 .parte-izquierda-sesion a {
   text-decoration: none;
   color: rgb(49, 12, 8);
-  font-size: 16px; /* Tamaño de fuente inicial */
-  margin: 10px 0; /* Espacio vertical entre los enlaces */
-  display: block; /* Convierte el enlace en un elemento de bloque */
+  font-size: 16px; 
+  margin: 10px 0; 
+  display: block; 
 }
 
 /* Estilos para la parte derecha */
 .parte-derecha-sesion {
-  flex: 6; /* La mitad derecha tomará el 60% del espacio disponible */
-  display: flex; /* Usamos flexbox para colocar los elementos uno debajo del otro */
-  flex-direction: column; /* Los elementos se apilan en una columna */
-  justify-content: center; /* Centra los elementos verticalmente en el centro de la página */
-  align-items: center; /* Centra los elementos horizontalmente en el centro de la página */
-  height: 100vh; /* Establece la altura al 100% de la ventana gráfica (viewport height) */
+  flex: 6; 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh; 
 }
 
 /* Estilos para el formulario */
 .parte-derecha-sesion form {
-  text-align: center; /* Centra el contenido dentro del formulario */
-  padding: 20px; /* Espacio alrededor del formulario */
+  text-align: center; 
+  padding: 20px; 
 }
 
 /* Estilos para los elementos del formulario */
 .parte-derecha-sesion form h1 {
-  font-size: 30px; /* Tamaño de fuente para el encabezado */
-  margin-bottom: 10px; /* Espacio inferior para separarlo del siguiente elemento */
+  font-size: 30px; 
+  margin-bottom: 10px; 
 }
 
 .parte-derecha-sesion form input[type=text],
 .parte-derecha-sesion form input[type=password] {
-  width: 100%; /* Ancho del 100% para que ocupen todo el ancho del formulario */
-  padding: 10px; /* Espacio interno alrededor de los campos de entrada */
-  margin-bottom: 10px; /* Espacio inferior entre los campos de entrada */
+  width: 100%; 
+  padding: 10px; 
+  margin-bottom: 10px; 
 }
 
 .parte-derecha-sesion form a {
-  text-decoration: none; /* Quita el subrayado de los enlaces */
-  display: block; /* Hace que el enlace ocupe todo el ancho disponible */
-  margin-bottom: 10px; /* Espacio inferior entre los enlaces */
+  text-decoration: none; 
+  display: block; 
+  margin-bottom: 10px; 
 }
 
 .parte-derecha-sesion form button {
-  background-color: #007bff; /* Color de fondo del botón */
-  color: #fff; /* Color del texto del botón */
+  background-color: #007bff; 
+  color: #fff; 
   border-radius: 5px;
-  padding: 10px 20px; /* Espacio interno alrededor del botón */
-  border: none; /* Quita el borde del botón */
-  margin: 10px auto; /* Centra horizontalmente y agrega espacio vertical entre los botones */
-  display: block; /* Hace que los botones ocupen todo el ancho disponible */
+  padding: 10px 20px; 
+  border: none; 
+  margin: 10px auto; 
+  display: block; 
+}
+a.button {
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 20px;
+  border: none;
+  margin: 10px auto;
+  display: block;
+  text-decoration: none; 
+  width: 140.05px;
+  height: auto;
 }
 
 /* Estilos para pantallas más pequeñas, por ejemplo, dispositivos móviles */
@@ -342,40 +350,95 @@ footer div:last-child { /* Estilo para el último div para eliminar la línea bl
   }
   .parte-izquierda-sesion {
     flex: none;
-    border-right: none; /* Elimina el borde derecho */
-    border-bottom: 1px solid black; /* Agrega un borde inferior */
-    order: 1; /* Cambia el orden para ponerlo en la parte superior */
+    border-right: none; 
+    border-bottom: 1px solid black; 
+    order: 2; 
   }
   .parte-izquierda-sesion img {
     width: 50px;
   }
   .parte-derecha-sesion {
-    order: 2; /* Cambia el orden para ponerlo debajo de la izquierda */
+    order: 1; 
   }
 }
+
+/*-----------------ESTILOS-------- CREARCUENTA.HTML------------------*/
+
+/* Estilos para el formulario */
+.parte-derecha-crearcuenta form {
+  text-align: center; 
+  padding: 20px; 
+}
+
+/* Estilo para las etiquetas de los campos */
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+/* Estilo para los campos de entrada */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="tel"],
+select {
+  width: 90%;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+/* Estilo para el botón de enviar */
+button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 20px;
+  border: none;
+  margin: 10px auto;
+  display: block;
+}
+
+/* Estilo para el enlace de "Iniciar Sesión" */
+p a {
+  text-decoration: none;
+  display: block;
+  margin-top: 10px;
+}
+@media (max-width:825px) {
+  .parte-izquierda-sesion{
+    border: none;
+  }
+  h1{
+    padding-top: 40px;
+  }
+}
+
+
+
 /*-----------------ESTILOS-------- CARRITO.HTML------------------*/
 /* Estilos para el contenedor principal */
 .container {
   display: flex;
-  justify-content: space-between; /* Distribuir los elementos horizontalmente */
-  align-items: center; /* Alinear elementos en la parte superior */
+  justify-content: space-between; 
+  align-items: center; 
 }
 
 /* Estilos para el contenedor principal del carrito */
 .container-carrito {
   flex-basis: 70%;
-  max-width: 800px; /* Ancho máximo del contenedor */
-  margin: 0; /* Eliminamos el margen para que esté completamente a la izquierda */
+  max-width: 800px; 
+  margin: 0; 
   padding: 20px;
   padding-top: 2.8rem;
-  float: left; /* Alineamos el contenedor a la izquierda */
+  float: left; 
 }
 
 /* Estilos para el contenedor de la factura a la derecha */
 .container-factura {
   flex-basis: 30%;
-  max-width: 40%; /* Ancho máximo del contenedor de la factura */
-  float: right; /* Alineamos el contenedor de la factura a la derecha */
+  max-width: 40%; 
+  float: right; 
   padding-top: 2.8rem;
   padding-right: 2rem;
 }
@@ -395,11 +458,11 @@ footer div:last-child { /* Estilo para el último div para eliminar la línea bl
 
 .container-compras {
   flex-basis: 70%;
-  max-width: 800px; /* Ancho máximo del contenedor */
-  margin: 0; /* Eliminamos el margen para que esté completamente a la izquierda */
+  max-width: 800px; 
+  margin: 0; 
   padding: 20px;
   padding-top: 2.8rem;
-  float: left; /* Alineamos el contenedor a la izquierda */
+  float: left; 
 }
 
 /* Estilos para los productos en la sección de compras */
@@ -421,7 +484,7 @@ footer div:last-child { /* Estilo para el último div para eliminar la línea bl
 }
 
 .producto a img {
-  max-width: 200px; /* Cambia el tamaño máximo de las imágenes dentro de las etiquetas <a> */
+  max-width: 200px; 
   height: auto;
 }
 
@@ -440,7 +503,7 @@ h4 {
 }
 
 .producto a img {
-  max-width: 200px; /* Cambia el tamaño máximo de las imágenes dentro de las etiquetas <a> */
+  max-width: 200px; 
   height: auto;
 }
 
@@ -473,37 +536,38 @@ h4 {
 
 /* Estilos para la factura */
 .factura {
-  background-color: #f2f2f2; /* Color de fondo de la factura */
-  padding: 20px; /* Espacio alrededor de la factura */
-  border: 1px solid #ccc; /* Borde alrededor de la factura */
+  background-color: #f2f2f2; 
+  padding: 20px;
+  border: 1px solid #ccc; 
 }
 
 .factura h2 {
-  font-size: 24px; /* Tamaño de fuente para el título de la factura */
-  margin-bottom: 10px; /* Espacio inferior para separarlo del subtotal */
+  font-size: 24px; 
+  margin-bottom: 10px; 
 }
 
 .factura p {
-  font-size: 16px; /* Tamaño de fuente para el texto de la factura */
-  margin: 5px 0; /* Espacio vertical entre los elementos de la factura */
+  font-size: 16px; 
+  margin: 5px 0; 
 }
 
 .total h4 {
-  font-size: 20px; /* Tamaño de fuente para el total */
-  margin-top: 10px; /* Espacio superior para separarlo del texto anterior */
-  text-align: right; /* Alineación a la derecha para el total */
+  font-size: 20px; 
+  margin-top: 10px; 
+  text-align: right; 
 }
+
 
 @media (max-width: 768px) {
   .container {
     display: block;
   }
   .container-compras {
-    flex-basis: 100%; /* Cambia el ancho a 100% para que ocupe todo el ancho disponible */
-    max-width: none; /* Elimina el ancho máximo */
-    margin: 0; /* Elimina el margen */
-    float: none; /* Elimina el float */
-    margin-top: 20px; /* Agrega espacio superior para separarlo de otros elementos */
+    flex-basis: 100%; 
+    max-width: none; 
+    margin: 0; 
+    float: none; 
+    margin-top: 20px; 
   }
   .factura {
     margin-top: 20px; /* Agrega espacio superior para separar la factura de .container-compras */
@@ -525,44 +589,46 @@ h4 {
     display: flex;
     flex-direction: column; /* Apila elementos verticalmente */
     border: 1px solid #ccc;
-    padding: 20px; /* Aumenta el espacio interno */
-    margin: 10px; /* Reduce el margen exterior */
+    padding: 20px; 
+    margin: 10px; 
   }
 
   .producto img {
-    max-width: 100px; /* Cambia el tamaño de la imagen */
-    margin-right: 0; /* Elimina el margen derecho */
+    max-width: 100px; 
+    margin-right: 0; 
   }
 
   .producto-info {
-    flex-grow: 0; /* Evita que el contenido crezca en altura */
+    flex-grow: 0; 
   }
 
   h1,
   h4 {
-    padding-left: 0; /* Elimina el espacio a la izquierda */
-    font-size: 1.5rem; /* Reduce el tamaño de la fuente */
+    padding-left: 0; 
+    font-size: 1.5rem; 
   }
 }
+
+  
 
 /*-----------------ESTILOS-------- COMPRAS.HTML------------------*/
 .contenedor-compras {
   display: flex;
-  justify-content: flex-start; /* Alinea los elementos al principio (izquierda) del contenedor */
+  justify-content: flex-start; 
 }
 
 .publicidad-compras {
-  flex: 0 0 20%; /* Ocupa el 30% del ancho de la pantalla */
+  flex: 0 0 20%; 
 }
 
 .container-compras {
-  flex: 0 0 80%; /* Ocupa el 70% del ancho de la pantalla */
+  flex: 0 0 80%; 
 }
 
 .compras {
   display: flex;
-  flex-direction: column; /* Alinea los elementos verticalmente */
-  align-items: flex-start; /* Alinea los elementos a la izquierda */
+  flex-direction: column; 
+  align-items: flex-start; 
 }
 
 /* Estilos para los productos en la sección de compras */
@@ -579,7 +645,7 @@ h4 {
 }
 
 .producto a img {
-  max-width: 200px; /* Cambia el tamaño máximo de las imágenes dentro de las etiquetas <a> */
+  max-width: 200px; 
   height: auto;
 }
 
@@ -613,5 +679,9 @@ h4 {
 @media (max-width: 1210px) {
   .publicidad-compras {
     display: none;
+  }
+  .contenedor-compras {
+    display: flex;
+    justify-content: center;
   }
 }
